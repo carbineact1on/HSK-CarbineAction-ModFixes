@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
     <packageId>CarbineAction.DDGLCompat</packageId>
-    <name>Dynamic Diplomacy + Geological Landforms Compatibility</name>
+    <name>Dynamic Diplomacy Fixes + GL Compat</name>
     <authors>
         <li>CarbineAction</li>
     </authors>
@@ -21,18 +21,27 @@
         <li>nilchei.dynamicdiplomacycontinued</li>
         <li>m00nl1ght.GeologicalLandforms</li>
     </loadAfter>
-    <description>Compatibility patch for Dynamic Diplomacy (Continued) and Geological Landforms.
+    <description>Fixes multiple bugs reported by Dynamic Diplomacy (Continued) users. Also adds Geological Landforms compatibility.
 
-Problem: Dynamic Diplomacy generates battle simulation maps at random world tiles. If Geological Landforms applies an extreme mountain landform (cliffs, impassable mountains, etc.) to that tile, NPC pawns cannot path across the map properly and battles fail to resolve.
+FIXES:
 
-Fix: This patch adds a Harmony postfix to DD's tile selection that rejects tiles with:
-- Impassable hilliness (vanilla mountain tiles)
-- Extreme cliff topology from Geological Landforms (CliffAllSides, CliffValley, CliffThreeSides)
-- Cave/underground topology (CaveEntrance, CaveTunnel)
+1. Geological Landforms terrain conflict
+   Rejects battle tiles with extreme cliff topology (CliffAllSides, CliffValley, CliffThreeSides), cave topology, impassable hilliness, or ocean tiles. Retries up to 5 times with expanding search distance.
 
-If the selected tile is problematic, the patch retries with a fallback tile selection or returns invalid to skip the event.
+2. Settlement tile validation
+   Rejects conquest events where the settlement sits on a tile that can't host a proper battle map (impassable, cave, cliff, ocean). Event retries with a different settlement instead of generating empty/broken maps.
 
-Requires: Dynamic Diplomacy - Continued AND Geological Landforms
-No effect if either mod is missing.
+3. Shambler/infection deadlock
+   When pawns get infected and switch factions (e.g., become shamblers from Necroa virus), they used to keep the battle map open forever. Now they're cleaned from the faction list so the battle properly ends.
+
+4. Hard timeout failsafe
+   If a battle somehow runs past 7 in-game days without ending, force it to end via DD's timeout mechanism. Prevents stuck maps.
+
+COMPATIBILITY:
+- Requires: Dynamic Diplomacy - Continued
+- Optional: Geological Landforms (terrain check falls back to vanilla hilliness only)
+- Works with any faction/biome mod
+
+Logs under [DD-GL Compat] tag so you can see what's being fixed.
     </description>
 </ModMetaData>
