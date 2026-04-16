@@ -34,6 +34,12 @@ CURRENT FIXES:
 
 - Hard timeout failsafe: if a battle runs past 7 game days without ending, force it to end via DD's timeout mechanism.
 
+- HSK-tuned event rates: reduces DD event frequency from vanilla pace (3-5 conquests per 60 days) to HSK pace (1-2 conquests per 90 days). Matches the slower HSK progression curve. Per-event changes:
+  - NPC_Conquest: 3-5 per 60d with 0.5d spacing → 1-2 per 90d with 20d spacing
+  - NPC_DiploChange: 2-4 per 60d with 5d spacing → 1-2 per 60d with 15d spacing
+  - NPC_Expansion: 1-2 per 60d with 15d spacing → 1 per 90d with 30d spacing
+  - NPC_Convert: 1-2 per 120d with 30d spacing → 1 per 180d with 60d spacing
+
 --- Geological Landforms ---
 
 - Shared terrain utility used by DD fixes. Checks tile topology (CliffAllSides, CliffValley, etc.) to avoid problematic battle maps.

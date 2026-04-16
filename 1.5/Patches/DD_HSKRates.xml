@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--
+	Dynamic Diplomacy event rate tuning for HSK.
+
+	HSK runs at a slower pace than vanilla, and DD's default conquest rate
+	(3-5 events per 60 days) can overwhelm a colony. These patches reduce
+	event frequency to a HSK-appropriate pace.
+
+	Only applies if Dynamic Diplomacy is loaded.
+	-->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps/li[Class="StorytellerCompProperties_OnOffCycle" and incident="NPC_DiploChange"]</xpath>
+		<success>Always</success>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps/li[Class="StorytellerCompProperties_OnOffCycle" and incident="NPC_DiploChange"]</xpath>
+			<value>
+				<li Class="StorytellerCompProperties_OnOffCycle">
+					<incident>NPC_DiploChange</incident>
+					<onDays>60</onDays>
+					<offDays>0.1</offDays>
+					<minSpacingDays>15</minSpacingDays>
+					<numIncidentsRange>1~2</numIncidentsRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps/li[Class="StorytellerCompProperties_OnOffCycle" and incident="NPC_Conquest"]</xpath>
+		<success>Always</success>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps/li[Class="StorytellerCompProperties_OnOffCycle" and incident="NPC_Conquest"]</xpath>
+			<value>
+				<li Class="StorytellerCompProperties_OnOffCycle">
+					<incident>NPC_Conquest</incident>
+					<onDays>90</onDays>
+					<offDays>0.1</offDays>
+					<minSpacingDays>20</minSpacingDays>
+					<numIncidentsRange>1~2</numIncidentsRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps/li[Class="StorytellerCompProperties_OnOffCycle" and incident="NPC_Expansion"]</xpath>
+		<success>Always</success>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps/li[Class="StorytellerCompProperties_OnOffCycle" and incident="NPC_Expansion"]</xpath>
+			<value>
+				<li Class="StorytellerCompProperties_OnOffCycle">
+					<incident>NPC_Expansion</incident>
+					<onDays>90</onDays>
+					<offDays>0.1</offDays>
+					<minSpacingDays>30</minSpacingDays>
+					<numIncidentsRange>1~1</numIncidentsRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps/li[Class="StorytellerCompProperties_OnOffCycle" and incident="NPC_Convert"]</xpath>
+		<success>Always</success>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps/li[Class="StorytellerCompProperties_OnOffCycle" and incident="NPC_Convert"]</xpath>
+			<value>
+				<li Class="StorytellerCompProperties_OnOffCycle">
+					<incident>NPC_Convert</incident>
+					<onDays>180</onDays>
+					<offDays>0.1</offDays>
+					<minSpacingDays>60</minSpacingDays>
+					<numIncidentsRange>1~1</numIncidentsRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
