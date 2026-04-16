@@ -3,7 +3,7 @@ using System.Reflection;
 using HarmonyLib;
 using Verse;
 
-namespace CarbineActionModFixes
+namespace ModFixesPack
 {
     /// <summary>
     /// Entry point for the patch pack. Applies all Harmony patches on startup.
@@ -13,22 +13,22 @@ namespace CarbineActionModFixes
     [StaticConstructorOnStartup]
     public static class Core
     {
-        public const string HarmonyId = "CarbineAction.ModFixes";
+        public const string HarmonyId = "ModFixesPack";
 
         static Core()
         {
-            Log.Message("[CarbineAction Mod Fixes] Loading patches...");
+            Log.Message("[Mod Fixes Pack] Loading patches...");
             ModState.DetectLoadedMods();
 
             try
             {
                 var harmony = new Harmony(HarmonyId);
                 harmony.PatchAll(Assembly.GetExecutingAssembly());
-                Log.Message("[CarbineAction Mod Fixes] Patches applied successfully.");
+                Log.Message("[Mod Fixes Pack] Patches applied successfully.");
             }
             catch (Exception e)
             {
-                Log.Error("[CarbineAction Mod Fixes] Failed to apply patches: " + e);
+                Log.Error("[Mod Fixes Pack] Failed to apply patches: " + e);
             }
         }
     }

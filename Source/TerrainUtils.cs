@@ -3,7 +3,7 @@ using RimWorld;
 using RimWorld.Planet;
 using Verse;
 
-namespace CarbineActionModFixes
+namespace ModFixesPack
 {
     /// <summary>
     /// Shared utilities for checking if a world tile is suitable for various events.
@@ -58,7 +58,7 @@ namespace CarbineActionModFixes
             }
             catch (Exception e)
             {
-                Log.Warning("[CarbineAction Mod Fixes] Error checking GL tile: " + e.Message);
+                Log.Warning("[Mod Fixes Pack] Error checking GL tile: " + e.Message);
                 return false;
             }
         }

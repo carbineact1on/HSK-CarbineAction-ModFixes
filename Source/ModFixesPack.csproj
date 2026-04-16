@@ -2,11 +2,11 @@
   <PropertyGroup>
     <OutputPath>..\1.5\Assemblies</OutputPath>
     <TargetFramework>net472</TargetFramework>
-    <AssemblyTitle>CarbineActionModFixes</AssemblyTitle>
+    <AssemblyTitle>ModFixesPack</AssemblyTitle>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <RootNamespace>CarbineActionModFixes</RootNamespace>
+    <RootNamespace>ModFixesPack</RootNamespace>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>

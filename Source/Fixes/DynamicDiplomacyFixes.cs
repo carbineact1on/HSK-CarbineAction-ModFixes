@@ -7,7 +7,7 @@ using RimWorld;
 using RimWorld.Planet;
 using Verse;
 
-namespace CarbineActionModFixes.Fixes
+namespace ModFixesPack.Fixes
 {
     /// <summary>
     /// Fix 1: Dynamic Diplomacy tile selection.
@@ -24,7 +24,7 @@ namespace CarbineActionModFixes.Fixes
             var type = AccessTools.TypeByName("DynamicDiplomacy.UtilsTileCellFinder");
             if (type == null)
             {
-                Log.Warning("[CarbineAction Mod Fixes] Could not find DD UtilsTileCellFinder type");
+                Log.Warning("[Mod Fixes Pack] Could not find DD UtilsTileCellFinder type");
                 return null;
             }
             return AccessTools.Method(type, "FindSuitableTile");
@@ -36,7 +36,7 @@ namespace CarbineActionModFixes.Fixes
 
             if (TerrainUtils.IsTileProblematic(__result))
             {
-                Log.Message($"[CarbineAction Mod Fixes] DD: Rejecting tile {__result} (unsuitable terrain), retrying...");
+                Log.Message($"[Mod Fixes Pack] DD: Rejecting tile {__result} (unsuitable terrain), retrying...");
 
                 var type = AccessTools.TypeByName("DynamicDiplomacy.UtilsTileCellFinder");
                 var fallbackMethod = AccessTools.Method(type, "FindSuitableTileFixedModerateTempFirst");
@@ -52,14 +52,14 @@ namespace CarbineActionModFixes.Fixes
 
                         if (newTile > 0 && !TerrainUtils.IsTileProblematic(newTile))
                         {
-                            Log.Message($"[CarbineAction Mod Fixes] DD: Found replacement tile {newTile} (attempt {attempt + 1})");
+                            Log.Message($"[Mod Fixes Pack] DD: Found replacement tile {newTile} (attempt {attempt + 1})");
                             __result = newTile;
                             return;
                         }
                     }
                 }
 
-                Log.Message("[CarbineAction Mod Fixes] DD: No suitable tile found after retries, event will be dropped");
+                Log.Message("[Mod Fixes Pack] DD: No suitable tile found after retries, event will be dropped");
                 __result = -1;
             }
         }
@@ -87,7 +87,7 @@ namespace CarbineActionModFixes.Fixes
 
             if (TerrainUtils.IsSettlementProblematic(__result))
             {
-                Log.Message($"[CarbineAction Mod Fixes] DD: Rejecting settlement {__result.Name} (unsuitable tile), retrying...");
+                Log.Message($"[Mod Fixes Pack] DD: Rejecting settlement {__result.Name} (unsuitable tile), retrying...");
                 __result = FindValidSettlement();
             }
         }
@@ -162,7 +162,7 @@ namespace CarbineActionModFixes.Fixes
                         bool isCombatEnded = (bool)isCombatEndedField.GetValue(__instance);
                         if (!isCombatEnded)
                         {
-                            Log.Warning("[CarbineAction Mod Fixes] DD: Battle hard timeout after 7 days — forcing end");
+                            Log.Warning("[Mod Fixes Pack] DD: Battle hard timeout after 7 days — forcing end");
                             isCombatEndedField.SetValue(__instance, true);
                         }
                     }
@@ -176,7 +176,7 @@ namespace CarbineActionModFixes.Fixes
             }
             catch (Exception e)
             {
-                Log.Warning("[CarbineAction Mod Fixes] Error in arena faction check: " + e.Message);
+                Log.Warning("[Mod Fixes Pack] Error in arena faction check: " + e.Message);
             }
         }
     }

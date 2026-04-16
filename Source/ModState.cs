@@ -1,6 +1,6 @@
 using Verse;
 
-namespace CarbineActionModFixes
+namespace ModFixesPack
 {
     /// <summary>
     /// Centralized mod detection. Each fix file checks these flags
@@ -26,7 +26,7 @@ namespace CarbineActionModFixes
 
         private static void LogStatus(string modName, bool loaded)
         {
-            Log.Message($"[CarbineAction Mod Fixes] {modName}: {(loaded ? "DETECTED" : "not loaded")}");
+            Log.Message($"[Mod Fixes Pack] {modName}: {(loaded ? "DETECTED" : "not loaded")}");
         }
     }
 }
