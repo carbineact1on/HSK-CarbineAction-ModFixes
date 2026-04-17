@@ -106,7 +106,7 @@ Effect: new weapon mods installed on top of a hand-tuned base (e.g. the HSK comm
 
 Auto-disables if Show Me Your Hands isn't loaded. Uses reflection to access WHands.ClutterHandsTDef so Mod Fixes Pack doesn't need a hard assembly reference.
 
-Credit: Show Me Your Hands by Sirvanix (original) and Mlie's Continued fork — this fix only wires up SMYH's existing WHands.ClutterHandsTDef system; the actual hand positions come from whatever preset mod is loaded alongside (the HSK community's hand-tuned preset mod being the typical source of reference data). This fix auto-fills the gaps between hand-tuned presets and weapons those presets don't cover.
+Credit: Show Me Your Hands by Sirvanix (original) and Mlie's Continued fork. Hand-position preset data bundled with this mod authored by Elldar (HSK Discord, @Elldar) — used with permission. The preset library covers 17 mods (Core, HSK, Royalty, Anomaly, HMC Biomes, Ratkin, Parabellum, Red Dragon, VPE, Vile's Metallurgy, Vile's Pre-industrial, and more). This fix adds an auto-matcher that uses the preset data as reference and extends coverage to uncovered weapon mods (CE conversions, faction mods) via family/size/category matching. Hand-position XMLs are gated behind IfModActive="Mlie.ShowMeYourHands" and won't load without it.
 
 COMPATIBILITY:
 - All fixes are conditional — inactive if the target mod isn't loaded
