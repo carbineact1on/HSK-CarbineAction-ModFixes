@@ -20,6 +20,7 @@
         <li>brrainz.harmony</li>
         <li>nilchei.dynamicdiplomacycontinued</li>
         <li>m00nl1ght.GeologicalLandforms</li>
+        <li>Woolstrand.RealRuins</li>
         <li>skyarkhangel.hsk</li>
     </loadAfter>
     <description>A consolidated patch pack for large RimWorld mods. Each fix only activates if its target mod is loaded — safe to install even if you don't have all the patched mods. More fixes will be added over time.
@@ -48,6 +49,25 @@ CURRENT FIXES:
 --- Geological Landforms ---
 
 - Shared terrain utility used by DD fixes. Checks tile topology (CliffAllSides, CliffValley, etc.) to avoid problematic battle maps.
+
+--- Real Ruins ---
+
+NEW MOD FIX: Real Ruins
+- World-tile relocation: POI icons moved off Mountainous/Impassable tiles via 10-ring BFS search for a valid neighbor. No more Factory/Military Base/Camp icons stuck in mountains.
+- Local-map Scatter relocation: ruin blueprints that would overlap thick-roof rock / natural stone are relocated to cleaner cells on the map (30-candidate search). Covers all 13 POI types, background scatter, medium/large/POI gen steps.
+- Effect: every Real Ruins icon on your world map is reachable from the map edge without having to mine through a mountain.
+
+HSK-style tuning (auto-applied when both Real Ruins AND HSK are loaded — more hostiles, harder to get stuff):
+- hostileChance: 10% → 35% (ruins are actual threats, not free loot stops)
+- trapChance: 0.1% → 0.4% (4x more traps)
+- forceMultiplier: 1.0 → 1.5 (hostile forces 50% stronger)
+- scavengingMultiplier: 1.0 → 1.75 (most valuable items stripped before you arrive)
+- itemCostLimit: 1000 → 400 silver (no premium loot)
+- ruinsCostCap: 1 billion → 300k silver (no jackpot mega-bases)
+- abandonedLocations: 20% → 50% (more truly abandoned POIs)
+- deteriorationMultiplier: left at 0.0 — integrity falloff already damages edges naturally; double-penalty would make leftovers useless
+
+Tuning only activates if HSK is detected. Non-HSK modpacks keep Real Ruins vanilla defaults.
 
 COMPATIBILITY:
 - All fixes are conditional — inactive if the target mod isn't loaded

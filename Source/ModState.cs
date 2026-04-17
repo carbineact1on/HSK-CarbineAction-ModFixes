@@ -11,6 +11,8 @@ namespace ModFixesPack
         // Mods we have fixes for
         public static bool DynamicDiplomacy { get; private set; }
         public static bool GeologicalLandforms { get; private set; }
+        public static bool RealRuins { get; private set; }
+        public static bool HSK { get; private set; }
 
         // Add more as we add fixes for other mods
         // public static bool SomeOtherMod { get; private set; }
@@ -19,9 +21,13 @@ namespace ModFixesPack
         {
             DynamicDiplomacy = ModsConfig.IsActive("nilchei.dynamicdiplomacycontinued");
             GeologicalLandforms = ModsConfig.IsActive("m00nl1ght.GeologicalLandforms");
+            RealRuins = ModsConfig.IsActive("Woolstrand.RealRuins");
+            HSK = ModsConfig.IsActive("skyarkhangel.hsk");
 
             LogStatus("Dynamic Diplomacy", DynamicDiplomacy);
             LogStatus("Geological Landforms", GeologicalLandforms);
+            LogStatus("Real Ruins", RealRuins);
+            LogStatus("HSK (Hardcore SK)", HSK);
         }
 
         private static void LogStatus(string modName, bool loaded)
