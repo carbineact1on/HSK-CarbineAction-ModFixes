@@ -13,6 +13,7 @@ namespace ModFixesPack
         public static bool GeologicalLandforms { get; private set; }
         public static bool RealRuins { get; private set; }
         public static bool HSK { get; private set; }
+        public static bool MultiLangColorfulTraits { get; private set; }
 
         // Add more as we add fixes for other mods
         // public static bool SomeOtherMod { get; private set; }
@@ -23,11 +24,13 @@ namespace ModFixesPack
             GeologicalLandforms = ModsConfig.IsActive("m00nl1ght.GeologicalLandforms");
             RealRuins = ModsConfig.IsActive("Woolstrand.RealRuins");
             HSK = ModsConfig.IsActive("skyarkhangel.hsk");
+            MultiLangColorfulTraits = ModsConfig.IsActive("multilangcolorfultraits.pirateby");
 
             LogStatus("Dynamic Diplomacy", DynamicDiplomacy);
             LogStatus("Geological Landforms", GeologicalLandforms);
             LogStatus("Real Ruins", RealRuins);
             LogStatus("HSK (Hardcore SK)", HSK);
+            LogStatus("MultiLang Colorful Traits", MultiLangColorfulTraits);
         }
 
         private static void LogStatus(string modName, bool loaded)

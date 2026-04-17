@@ -21,6 +21,7 @@
         <li>nilchei.dynamicdiplomacycontinued</li>
         <li>m00nl1ght.GeologicalLandforms</li>
         <li>Woolstrand.RealRuins</li>
+        <li>multilangcolorfultraits.pirateby</li>
         <li>skyarkhangel.hsk</li>
     </loadAfter>
     <description>A consolidated patch pack for large RimWorld mods. Each fix only activates if its target mod is loaded — safe to install even if you don't have all the patched mods. More fixes will be added over time.
@@ -68,6 +69,28 @@ HSK-style tuning (auto-applied when both Real Ruins AND HSK are loaded — more 
 - deteriorationMultiplier: left at 0.0 — integrity falloff already damages edges naturally; double-penalty would make leftovers useless
 
 Tuning only activates if HSK is detected. Non-HSK modpacks keep Real Ruins vanilla defaults.
+
+--- MultiLang Colorful Traits ---
+
+NEW MOD FIX: MultiLang Colorful Traits auto-extend
+- MultiLang Colorful Traits colors traits by QUALITY (Unique / Good / Neutral / Bad / Terrible) using hand-curated XML lists for Core, HSK, RJW, AlienRaces, and CE. Any trait not on those lists stays uncolored — and its own "Dump" workflow requires manual XML editing per mod.
+- This fix runs after MultiLang, inspects every TraitDef in the modlist, skips degrees MultiLang already colored (manual classification always wins), and auto-classifies the rest into MultiLang's 5 tiers using an identical color palette so everything looks visually consistent.
+- Classification is mechanical: it scores each degree from skillGains, statOffsets/Factors, the parent TraitDef's disabledWorkTypes/Tags, random/forced mental states, hunger rate, pain modifiers, and required work tags.
+- 8-tier classification using all the colors defined in MultiLang's ColorBase.xml:
+  * Legendary (score &gt;= +7): pure bright green #00FF00 — exceptional positive
+  * Good (+3 to +6): muted green #9AB973 — solid positive
+  * Neutral (-2 to +2): plain white (label left untouched — reduces visual noise so only meaningful traits stand out)
+  * Bad (-3 to -4): salmon orange #FF9966 — noticeable downside
+  * Terrible (-5 to -6): red #ED2939 — serious downside
+  * Nightmare (&lt;= -7): pure red #FF0000 — worst of the worst
+  * Unique (strongly flavored mechanic, e.g. large psychic sensitivity swing): blue #0000FF
+  * Restrictive (disables work types/tags, or has required work tags): purple #9370DB — shape-defining trait regardless of score
+- Restrictive and Unique take priority over the score-based tiers so build-shaping and quirk mechanics are always visible at a glance.
+- Log example: [Mod Fixes Pack] MultiLang: auto-classified traits (Good:60, Neutral:55, Bad:40, Terrible:20, Unique:10, skipped 185 already-colored).
+
+Net effect: before the fix, ~30% of HSK modpack traits are colored (MultiLang's hard-coded lists). After, ~100% of traits are colored. MultiLang's hand-tuning is preserved on traits it knows; we just fill the gaps.
+
+Auto-disables if MultiLang Colorful Traits isn't loaded.
 
 COMPATIBILITY:
 - All fixes are conditional — inactive if the target mod isn't loaded
