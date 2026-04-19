@@ -2,23 +2,14 @@
 <!-- ============================================================ -->
 <!-- HSK Mod Fixes Pack — KCSG SymbolDef Catch-All                 -->
 <!-- ============================================================ -->
-<!-- Auto-generated KCSG.SymbolDefs covering symbols referenced in
-     StructureLayoutDefs across the entire HSK modlist that lack
-     matching SymbolDef entries in VEF or any other loaded mod.
-     Since KCSG reads SymbolDefs globally, one file covers all mods.
+<!-- Consolidated missing-symbol SymbolDefs for every KCSG-using
+     mod on the HSK modlist. One file covers all mods because KCSG
+     reads SymbolDefs globally. Auto-generated from a sweep of every
+     StructureLayoutDef across Mods/ + workshop/294100, cross-checked
+     against every 1.5-active SymbolDef.
 
-     Contributing mods (workshop IDs / mod names):
-       3209927822  Vanilla Base Generation Expanded (~1146 symbols)
-       3141472661  Ancient Mining Industry  (~158)
-       3469398006  (~132)
-       3025493377  Alpha Memes  (~131)
-       HSK-VFE-Deserters  (~131 — moved here from the Deserters repo)
-       3075384838  (~109)
-       2787850474  Outposts  (~95)
-       ...and others.
-
-     Harmless if a target mod is disabled — SymbolDef just never gets
-     queried. Safe to ship as part of the fixes pack. -->
+     Harmless when a target mod is disabled — unused SymbolDefs just
+     never get queried. No load-order sensitivity. -->
 <Defs>
 
   <KCSG.SymbolDef>
@@ -42,6 +33,11 @@
   <KCSG.SymbolDef>
     <defName>Alpaca</defName>
     <thing>Alpaca</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Ambrosia</defName>
+    <thing>Ambrosia</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -232,6 +228,16 @@
   <KCSG.SymbolDef>
     <defName>AncientKitchenSink</defName>
     <thing>AncientKitchenSink</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AncientLamp</defName>
+    <thing>AncientLamp</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AncientLamppost</defName>
+    <thing>AncientLamppost</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -652,6 +658,18 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>AnimalSleepingBox_BlocksLimestone</defName>
+    <thing>AnimalSleepingBox</thing>
+    <stuff>BlocksLimestone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AnimalSleepingBox_BlocksMarble</defName>
+    <thing>AnimalSleepingBox</thing>
+    <stuff>BlocksMarble</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>AnimalSleepingBox_Jade</defName>
     <thing>AnimalSleepingBox</thing>
     <stuff>Jade</stuff>
@@ -673,6 +691,11 @@
     <defName>AnimalSleepingBox_WoodLog</defName>
     <thing>AnimalSleepingBox</thing>
     <stuff>WoodLog</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AnimusStone</defName>
+    <thing>AnimusStone</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -894,6 +917,13 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Armchair_DevilstrandCloth_East</defName>
+    <thing>Armchair</thing>
+    <stuff>DevilstrandCloth</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Armchair_DevilstrandCloth_South</defName>
     <thing>Armchair</thing>
     <stuff>DevilstrandCloth</stuff>
@@ -905,6 +935,20 @@
     <thing>Armchair</thing>
     <stuff>Hyperweave</stuff>
     <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Armchair_Leather_Bluefur_North</defName>
+    <thing>Armchair</thing>
+    <stuff>Leather_Bluefur</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Armchair_Leather_Bluefur_South</defName>
+    <thing>Armchair</thing>
+    <stuff>Leather_Bluefur</stuff>
+    <rotation>South</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -936,6 +980,13 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Armchair_Leather_Elephant_South</defName>
+    <thing>Armchair</thing>
+    <stuff>Leather_Elephant</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Armchair_Leather_Fox_West</defName>
     <thing>Armchair</thing>
     <stuff>Leather_Fox</stuff>
@@ -953,6 +1004,13 @@
     <defName>Armchair_Leather_Lizard_East</defName>
     <thing>Armchair</thing>
     <stuff>Leather_Lizard</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Armchair_Leather_Panthera_East</defName>
+    <thing>Armchair</thing>
+    <stuff>Leather_Panthera</stuff>
     <rotation>East</rotation>
   </KCSG.SymbolDef>
 
@@ -1156,6 +1214,34 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Bed_BlocksGranite_East</defName>
+    <thing>Bed</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Bed_BlocksGranite_North</defName>
+    <thing>Bed</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Bed_BlocksGranite_South</defName>
+    <thing>Bed</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Bed_BlocksGranite_West</defName>
+    <thing>Bed</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Bed_BlocksLimestone_South</defName>
     <thing>Bed</thing>
     <stuff>BlocksLimestone</stuff>
@@ -1208,6 +1294,34 @@
     <defName>Bed_Plasteel_West</defName>
     <thing>Bed</thing>
     <stuff>Plasteel</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Bed_Steel_East</defName>
+    <thing>Bed</thing>
+    <stuff>Steel</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Bed_Steel_North</defName>
+    <thing>Bed</thing>
+    <stuff>Steel</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Bed_Steel_South</defName>
+    <thing>Bed</thing>
+    <stuff>Steel</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Bed_Steel_West</defName>
+    <thing>Bed</thing>
+    <stuff>Steel</stuff>
     <rotation>West</rotation>
   </KCSG.SymbolDef>
 
@@ -1774,6 +1888,36 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Brazier_BlocksGranite</defName>
+    <thing>Brazier</thing>
+    <stuff>BlocksGranite</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Brazier_BlocksLimestone</defName>
+    <thing>Brazier</thing>
+    <stuff>BlocksLimestone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Brazier_BlocksMarble</defName>
+    <thing>Brazier</thing>
+    <stuff>BlocksMarble</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Brazier_BlocksSandstone</defName>
+    <thing>Brazier</thing>
+    <stuff>BlocksSandstone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Brazier_BlocksSlate</defName>
+    <thing>Brazier</thing>
+    <stuff>BlocksSlate</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Brazier_Gold</defName>
     <thing>Brazier</thing>
     <stuff>Gold</stuff>
@@ -1857,9 +2001,38 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Chemfuel</defName>
+    <thing>Chemfuel</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>ChessTable_BlocksGranite</defName>
     <thing>ChessTable</thing>
     <stuff>BlocksGranite</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ChessTable_BlocksMarble</defName>
+    <thing>ChessTable</thing>
+    <stuff>BlocksMarble</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ChessTable_BlocksSandstone</defName>
+    <thing>ChessTable</thing>
+    <stuff>BlocksSandstone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ChessTable_BlocksSlate</defName>
+    <thing>ChessTable</thing>
+    <stuff>BlocksSlate</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ChessTable_Steel</defName>
+    <thing>ChessTable</thing>
+    <stuff>Steel</stuff>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -1896,6 +2069,21 @@
   <KCSG.SymbolDef>
     <defName>ChunkMechanoidSlag</defName>
     <thing>ChunkMechanoidSlag</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ChunkSandstone</defName>
+    <thing>ChunkSandstone</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ChunkSlagSteel</defName>
+    <thing>ChunkSlagSteel</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ChunkSlate</defName>
+    <thing>ChunkSlate</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -2223,6 +2411,13 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>DiningChair_Steel_West</defName>
+    <thing>DiningChair</thing>
+    <stuff>Steel</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>DiningChair_Tungsteel_East</defName>
     <thing>DiningChair_Tungsteel</thing>
     <rotation>East</rotation>
@@ -2310,6 +2505,13 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>DoubleBed_BlocksMarble_East</defName>
+    <thing>DoubleBed</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>DoubleBed_Steel_South</defName>
     <thing>DoubleBed</thing>
     <stuff>Steel</stuff>
@@ -2380,10 +2582,38 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Drape_DevilstrandCloth_East</defName>
+    <thing>Drape</thing>
+    <stuff>DevilstrandCloth</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_DevilstrandCloth_North</defName>
+    <thing>Drape</thing>
+    <stuff>DevilstrandCloth</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_DevilstrandCloth_South</defName>
+    <thing>Drape</thing>
+    <stuff>DevilstrandCloth</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Drape_Hyperweave_North</defName>
     <thing>Drape</thing>
     <stuff>Hyperweave</stuff>
     <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Bird_East</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Bird</stuff>
+    <rotation>East</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -2394,6 +2624,13 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Drape_Leather_Dog_North</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Dog</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Drape_Leather_Dog_South</defName>
     <thing>Drape</thing>
     <stuff>Leather_Dog</stuff>
@@ -2401,10 +2638,206 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Drape_Leather_Elephant_East</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Elephant</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Elephant_North</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Elephant</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Fox_East</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Fox</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Light_East</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Light</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Light_North</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Light</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Lizard_East</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Lizard</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Lizard_North</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Lizard</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Lizard_West</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Lizard</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Panthera_East</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Panthera</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Panthera_North</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Panthera</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Plain_North</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Plain</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Plain_South</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Plain</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Wolf_East</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Wolf</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Leather_Wolf_South</defName>
+    <thing>Drape</thing>
+    <stuff>Leather_Wolf</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Synthread_East</defName>
+    <thing>Drape</thing>
+    <stuff>Synthread</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Synthread_North</defName>
+    <thing>Drape</thing>
+    <stuff>Synthread</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Synthread_South</defName>
+    <thing>Drape</thing>
+    <stuff>Synthread</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_Synthread_West</defName>
+    <thing>Drape</thing>
+    <stuff>Synthread</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_WoolMuffalo_East</defName>
+    <thing>Drape</thing>
+    <stuff>WoolMuffalo</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_WoolMuffalo_North</defName>
+    <thing>Drape</thing>
+    <stuff>WoolMuffalo</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Drape_WoolSheep_East</defName>
     <thing>Drape</thing>
     <stuff>WoolSheep</stuff>
     <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Drape_WoolSheep_North</defName>
+    <thing>Drape</thing>
+    <stuff>WoolSheep</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Dresser_BlocksLimestone_East</defName>
+    <thing>Dresser</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Dresser_BlocksLimestone_South</defName>
+    <thing>Dresser</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Dresser_BlocksMarble_North</defName>
+    <thing>Dresser</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Dresser_BlocksSandstone_East</defName>
+    <thing>Dresser</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Dresser_BlocksSandstone_South</defName>
+    <thing>Dresser</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Dresser_BlocksSlate_East</defName>
+    <thing>Dresser</thing>
+    <stuff>BlocksSlate</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Dresser_BlocksSlate_South</defName>
+    <thing>Dresser</thing>
+    <stuff>BlocksSlate</stuff>
+    <rotation>South</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -2447,6 +2880,20 @@
     <thing>Dresser</thing>
     <stuff>Plasteel</stuff>
     <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Dresser_Silver_East</defName>
+    <thing>Dresser</thing>
+    <stuff>Silver</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Dresser_Steel_East</defName>
+    <thing>Dresser</thing>
+    <stuff>Steel</stuff>
+    <rotation>East</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -2653,6 +3100,13 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>ElectricCrematorium_BlocksMarble_West</defName>
+    <thing>ElectricCrematorium</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>ElectricCrematorium_BlocksSlate_East</defName>
     <thing>ElectricCrematorium</thing>
     <stuff>BlocksSlate</stuff>
@@ -2738,6 +3192,13 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>ElectricTailoringBench_Steel_West</defName>
+    <thing>ElectricTailoringBench</thing>
+    <stuff>Steel</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>ElectricTailoringBench_WoodLog_East</defName>
     <thing>ElectricTailoringBench</thing>
     <stuff>WoodLog</stuff>
@@ -2766,6 +3227,48 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>EndTable_BlocksLimestone_East</defName>
+    <thing>EndTable</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_BlocksLimestone_South</defName>
+    <thing>EndTable</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_BlocksMarble_East</defName>
+    <thing>EndTable</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_BlocksMarble_South</defName>
+    <thing>EndTable</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_BlocksSandstone_South</defName>
+    <thing>EndTable</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_BlocksSandstone_West</defName>
+    <thing>EndTable</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>EndTable_BlocksSlate_East</defName>
     <thing>EndTable</thing>
     <stuff>BlocksSlate</stuff>
@@ -2784,6 +3287,13 @@
     <thing>EndTable</thing>
     <stuff>BlocksSlate</stuff>
     <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_BlocksSlate_West</defName>
+    <thing>EndTable</thing>
+    <stuff>BlocksSlate</stuff>
+    <rotation>West</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -2812,6 +3322,41 @@
     <thing>EndTable</thing>
     <stuff>Plasteel</stuff>
     <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_Silver_East</defName>
+    <thing>EndTable</thing>
+    <stuff>Silver</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_Steel_East</defName>
+    <thing>EndTable</thing>
+    <stuff>Steel</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_Steel_North</defName>
+    <thing>EndTable</thing>
+    <stuff>Steel</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_Steel_South</defName>
+    <thing>EndTable</thing>
+    <stuff>Steel</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>EndTable_Steel_West</defName>
+    <thing>EndTable</thing>
+    <stuff>Steel</stuff>
+    <rotation>West</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -2882,6 +3427,12 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>FenceGate_Steel</defName>
+    <thing>FenceGate</thing>
+    <stuff>Steel</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>FenceGate_Tungsteel</defName>
     <thing>FenceGate_Tungsteel</thing>
   </KCSG.SymbolDef>
@@ -2899,9 +3450,33 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Fence_BlocksGranite</defName>
+    <thing>Fence</thing>
+    <stuff>BlocksGranite</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Fence_BlocksLimestone</defName>
+    <thing>Fence</thing>
+    <stuff>BlocksLimestone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Fence_BlocksMarble</defName>
+    <thing>Fence</thing>
+    <stuff>BlocksMarble</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Fence_BlocksSandstone</defName>
     <thing>Fence</thing>
     <stuff>BlocksSandstone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Fence_BlocksSlate</defName>
+    <thing>Fence</thing>
+    <stuff>BlocksSlate</stuff>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -3208,6 +3783,11 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Gold</defName>
+    <thing>Gold</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>GrandThrone_BlocksGranite_South</defName>
     <thing>GrandThrone</thing>
     <stuff>BlocksGranite</stuff>
@@ -3233,6 +3813,13 @@
     <thing>GrandThrone</thing>
     <stuff>BlocksMarble</stuff>
     <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>GrandThrone_BlocksSandstone_South</defName>
+    <thing>GrandThrone</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>South</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -3318,8 +3905,33 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Gun_AssaultRifle</defName>
+    <thing>Gun_AssaultRifle</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Gun_Autopistol</defName>
+    <thing>Gun_Autopistol</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Gun_BoltActionRifle</defName>
     <thing>Gun_BoltActionRifle</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Gun_ChainShotgun</defName>
+    <thing>Gun_ChainShotgun</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Gun_ChargeLance</defName>
+    <thing>Gun_ChargeLance</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Gun_ChargeRifle</defName>
+    <thing>Gun_ChargeRifle</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -3333,6 +3945,21 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Gun_LMG</defName>
+    <thing>Gun_LMG</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Gun_MachinePistol</defName>
+    <thing>Gun_MachinePistol</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Gun_Minigun</defName>
+    <thing>Gun_Minigun</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Gun_PumpShotgun</defName>
     <thing>Gun_PumpShotgun</thing>
   </KCSG.SymbolDef>
@@ -3340,6 +3967,11 @@
   <KCSG.SymbolDef>
     <defName>Gun_Revolver</defName>
     <thing>Gun_Revolver</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Gun_SniperRifle</defName>
+    <thing>Gun_SniperRifle</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -3387,6 +4019,18 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Harp_South</defName>
+    <thing>Harp</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Harp_West</defName>
+    <thing>Harp</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Harpsichord_East</defName>
     <thing>Harpsichord</thing>
     <rotation>East</rotation>
@@ -3396,6 +4040,18 @@
     <defName>Harpsichord_North</defName>
     <thing>Harpsichord</thing>
     <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Harpsichord_South</defName>
+    <thing>Harpsichord</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Harpsichord_West</defName>
+    <thing>Harpsichord</thing>
+    <rotation>West</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -3668,6 +4324,11 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Leather_Dog</defName>
+    <thing>Leather_Dog</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Leather_Elephant</defName>
     <thing>Leather_Elephant</thing>
   </KCSG.SymbolDef>
@@ -3690,6 +4351,11 @@
   <KCSG.SymbolDef>
     <defName>Leather_Plain</defName>
     <thing>Leather_Plain</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Leather_Rhinoceros</defName>
+    <thing>Leather_Rhinoceros</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -3725,6 +4391,11 @@
     <defName>LongRangeMineralScanner_West</defName>
     <thing>LongRangeMineralScanner</thing>
     <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>LoveEnhancer</defName>
+    <thing>LoveEnhancer</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -3775,6 +4446,11 @@
   <KCSG.SymbolDef>
     <defName>MealSimple</defName>
     <thing>MealSimple</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>MealSurvivalPack</defName>
+    <thing>MealSurvivalPack</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -3896,6 +4572,16 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>MedicineHerbal</defName>
+    <thing>MedicineHerbal</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>MedicineIndustrial</defName>
+    <thing>MedicineIndustrial</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>MedicineUltratech</defName>
     <thing>MedicineUltratech</thing>
   </KCSG.SymbolDef>
@@ -3987,6 +4673,11 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Milk</defName>
+    <thing>Milk</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>MineableGold</defName>
     <thing>MineableGold</thing>
   </KCSG.SymbolDef>
@@ -4033,14 +4724,31 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>NatureShrine_Large_WoodLog</defName>
+    <thing>NatureShrine_Large</thing>
+    <stuff>WoodLog</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>NatureShrine_Small_Jade</defName>
     <thing>NatureShrine_Small</thing>
     <stuff>Jade</stuff>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>NatureShrine_Small_WoodLog</defName>
+    <thing>NatureShrine_Small</thing>
+    <stuff>WoodLog</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Neurocalculator</defName>
     <thing>Neurocalculator</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Neurotrainer_Animals</defName>
+    <thing>Neurotrainer_Animals</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -4054,6 +4762,11 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Neurotrainer_Intellectual</defName>
+    <thing>Neurotrainer_Intellectual</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Neurotrainer_Melee</defName>
     <thing>Neurotrainer_Melee</thing>
   </KCSG.SymbolDef>
@@ -4061,6 +4774,11 @@
   <KCSG.SymbolDef>
     <defName>Neurotrainer_Plants</defName>
     <thing>Neurotrainer_Plants</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Neurotrainer_Social</defName>
+    <thing>Neurotrainer_Social</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -4168,6 +4886,12 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Piano_West</defName>
+    <thing>Piano</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Pig</defName>
     <thing>Pig</thing>
   </KCSG.SymbolDef>
@@ -4178,9 +4902,21 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>PlantPot_BlocksGranite</defName>
+    <thing>PlantPot</thing>
+    <stuff>BlocksGranite</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>PlantPot_BlocksLimestone</defName>
     <thing>PlantPot</thing>
     <stuff>BlocksLimestone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>PlantPot_BlocksSandstone</defName>
+    <thing>PlantPot</thing>
+    <stuff>BlocksSandstone</stuff>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -4233,6 +4969,11 @@
   <KCSG.SymbolDef>
     <defName>Plant_Agave</defName>
     <thing>Plant_Agave</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_Alocasia</defName>
+    <thing>Plant_Alocasia</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -4301,8 +5042,18 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Plant_GrassAnima</defName>
+    <thing>Plant_GrassAnima</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Plant_Haygrass</defName>
     <thing>Plant_Haygrass</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_Healroot</defName>
+    <thing>Plant_Healroot</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -4331,8 +5082,23 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Plant_Psychoid</defName>
+    <thing>Plant_Psychoid</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_Rafflesia</defName>
+    <thing>Plant_Rafflesia</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Plant_Rice</defName>
     <thing>Plant_Rice</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_Rose</defName>
+    <thing>Plant_Rose</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -4356,6 +5122,16 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Plant_Tinctoria</defName>
+    <thing>Plant_Tinctoria</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_TreeAnima</defName>
+    <thing>Plant_TreeAnima</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Plant_TreeBonsai</defName>
     <thing>Plant_TreeBonsai</thing>
   </KCSG.SymbolDef>
@@ -4366,13 +5142,33 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Plant_TreeMaple</defName>
+    <thing>Plant_TreeMaple</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Plant_TreeOak</defName>
     <thing>Plant_TreeOak</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Plant_TreePalm</defName>
+    <thing>Plant_TreePalm</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Plant_TreePoplar</defName>
     <thing>Plant_TreePoplar</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plant_TreeWillow</defName>
+    <thing>Plant_TreeWillow</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Plasteel</defName>
+    <thing>Plasteel</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -4483,6 +5279,11 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>RawBerries</defName>
+    <thing>RawBerries</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>RawCorn</defName>
     <thing>RawCorn</thing>
   </KCSG.SymbolDef>
@@ -4539,6 +5340,20 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>RoyalBed_Steel_North</defName>
+    <thing>RoyalBed</thing>
+    <stuff>Steel</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>RoyalBed_Steel_South</defName>
+    <thing>RoyalBed</thing>
+    <stuff>Steel</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>RoyalBed_WoodLog_North</defName>
     <thing>RoyalBed</thing>
     <stuff>WoodLog</stuff>
@@ -4589,6 +5404,20 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Sarcophagus_BlocksLimestone_East</defName>
+    <thing>Sarcophagus</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Sarcophagus_BlocksLimestone_North</defName>
+    <thing>Sarcophagus</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Sarcophagus_BlocksLimestone_South</defName>
     <thing>Sarcophagus</thing>
     <stuff>BlocksLimestone</stuff>
@@ -4617,10 +5446,38 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Sarcophagus_BlocksSandstone_East</defName>
+    <thing>Sarcophagus</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Sarcophagus_BlocksSandstone_North</defName>
     <thing>Sarcophagus</thing>
     <stuff>BlocksSandstone</stuff>
     <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Sarcophagus_BlocksSlate_East</defName>
+    <thing>Sarcophagus</thing>
+    <stuff>BlocksSlate</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Sarcophagus_BlocksSlate_North</defName>
+    <thing>Sarcophagus</thing>
+    <stuff>BlocksSlate</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Sarcophagus_BlocksSlate_South</defName>
+    <thing>Sarcophagus</thing>
+    <stuff>BlocksSlate</stuff>
+    <rotation>South</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -4634,6 +5491,20 @@
     <defName>Sarcophagus_Jade_North</defName>
     <thing>Sarcophagus</thing>
     <stuff>Jade</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Sarcophagus_Steel_East</defName>
+    <thing>Sarcophagus</thing>
+    <stuff>Steel</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Sarcophagus_Steel_North</defName>
+    <thing>Sarcophagus</thing>
+    <stuff>Steel</stuff>
     <rotation>North</rotation>
   </KCSG.SymbolDef>
 
@@ -4780,6 +5651,69 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>ShelfSmall_BlocksLimestone_East</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ShelfSmall_BlocksLimestone_North</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ShelfSmall_BlocksLimestone_West</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ShelfSmall_BlocksSandstone_North</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ShelfSmall_Silver_North</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>Silver</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ShelfSmall_Steel_East</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>Steel</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ShelfSmall_Steel_North</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>Steel</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ShelfSmall_Steel_South</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>Steel</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ShelfSmall_Steel_West</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>Steel</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>ShelfSmall_Tungsteel_East</defName>
     <thing>ShelfSmall_Tungsteel</thing>
     <rotation>East</rotation>
@@ -4802,6 +5736,13 @@
     <thing>ShelfSmall</thing>
     <stuff>WoodLog</stuff>
     <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ShelfSmall_WoodLog_North</defName>
+    <thing>ShelfSmall</thing>
+    <stuff>WoodLog</stuff>
+    <rotation>North</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -4917,6 +5858,13 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Shelf_Silver_North</defName>
+    <thing>Shelf</thing>
+    <stuff>Silver</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Shelf_Silver_South</defName>
     <thing>Shelf</thing>
     <stuff>Silver</stuff>
@@ -5002,6 +5950,11 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>ShipChunk_North</defName>
+    <thing>ShipChunk</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>ShipLandingBeacon</defName>
     <thing>ShipLandingBeacon</thing>
   </KCSG.SymbolDef>
@@ -5068,6 +6021,11 @@
   <KCSG.SymbolDef>
     <defName>Ship_SensorCluster</defName>
     <thing>Ship_SensorCluster</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Shuttle</defName>
+    <thing>Shuttle</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -5251,6 +6209,11 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Steel</defName>
+    <thing>Steel</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>SteleGrand_BlocksGranite</defName>
     <thing>SteleGrand</thing>
     <stuff>BlocksGranite</stuff>
@@ -5260,6 +6223,24 @@
     <defName>SteleGrand_BlocksLimestone</defName>
     <thing>SteleGrand</thing>
     <stuff>BlocksLimestone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>SteleGrand_BlocksMarble</defName>
+    <thing>SteleGrand</thing>
+    <stuff>BlocksMarble</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>SteleGrand_BlocksSandstone</defName>
+    <thing>SteleGrand</thing>
+    <stuff>BlocksSandstone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>SteleGrand_BlocksSlate</defName>
+    <thing>SteleGrand</thing>
+    <stuff>BlocksSlate</stuff>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -5284,6 +6265,73 @@
     <defName>SteleLarge_BlocksMarble</defName>
     <thing>SteleLarge</thing>
     <stuff>BlocksMarble</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>SteleLarge_BlocksSandstone</defName>
+    <thing>SteleLarge</thing>
+    <stuff>BlocksSandstone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>SteleLarge_BlocksSlate</defName>
+    <thing>SteleLarge</thing>
+    <stuff>BlocksSlate</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>SteleLarge_Jade</defName>
+    <thing>SteleLarge</thing>
+    <stuff>Jade</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Stool_BlocksGranite_East</defName>
+    <thing>Stool</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Stool_BlocksLimestone_East</defName>
+    <thing>Stool</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Stool_BlocksLimestone_North</defName>
+    <thing>Stool</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Stool_BlocksLimestone_South</defName>
+    <thing>Stool</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Stool_BlocksMarble_East</defName>
+    <thing>Stool</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Stool_BlocksMarble_North</defName>
+    <thing>Stool</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Stool_BlocksMarble_South</defName>
+    <thing>Stool</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>South</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -5421,10 +6469,36 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Synthread</defName>
+    <thing>Synthread</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Table1x2c_BlocksGranite_East</defName>
     <thing>Table1x2c</thing>
     <stuff>BlocksGranite</stuff>
     <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table1x2c_BlocksLimestone_East</defName>
+    <thing>Table1x2c</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table1x2c_BlocksLimestone_North</defName>
+    <thing>Table1x2c</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table1x2c_BlocksLimestone_South</defName>
+    <thing>Table1x2c</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>South</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -5453,6 +6527,27 @@
     <thing>Table1x2c</thing>
     <stuff>BlocksMarble</stuff>
     <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table1x2c_BlocksSandstone_North</defName>
+    <thing>Table1x2c</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table1x2c_BlocksSandstone_South</defName>
+    <thing>Table1x2c</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table1x2c_BlocksSlate_East</defName>
+    <thing>Table1x2c</thing>
+    <stuff>BlocksSlate</stuff>
+    <rotation>East</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -5509,6 +6604,20 @@
     <thing>Table1x2c</thing>
     <stuff>Steel</stuff>
     <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table1x2c_Steel_South</defName>
+    <thing>Table1x2c</thing>
+    <stuff>Steel</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table1x2c_Steel_West</defName>
+    <thing>Table1x2c</thing>
+    <stuff>Steel</stuff>
+    <rotation>West</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -5570,6 +6679,18 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Table2x2c_BlocksLimestone</defName>
+    <thing>Table2x2c</thing>
+    <stuff>BlocksLimestone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table2x2c_BlocksMarble</defName>
+    <thing>Table2x2c</thing>
+    <stuff>BlocksMarble</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Table2x2c_Steel</defName>
     <thing>Table2x2c</thing>
     <stuff>Steel</stuff>
@@ -5594,10 +6715,24 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Table2x4c_BlocksLimestone_North</defName>
+    <thing>Table2x4c</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Table2x4c_BlocksMarble_East</defName>
     <thing>Table2x4c</thing>
     <stuff>BlocksMarble</stuff>
     <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table2x4c_BlocksMarble_North</defName>
+    <thing>Table2x4c</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>North</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -5721,6 +6856,12 @@
     <defName>Table3x3c_Plasteel</defName>
     <thing>Table3x3c</thing>
     <stuff>Plasteel</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Table3x3c_Steel</defName>
+    <thing>Table3x3c</thing>
+    <stuff>Steel</stuff>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -5857,6 +6998,13 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>TableStonecutter_Steel_South</defName>
+    <thing>TableStonecutter</thing>
+    <stuff>Steel</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>TableStonecutter_Steel_West</defName>
     <thing>TableStonecutter</thing>
     <stuff>Steel</stuff>
@@ -5934,6 +7082,55 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Throne_BlocksGranite_East</defName>
+    <thing>Throne</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Throne_BlocksGranite_South</defName>
+    <thing>Throne</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Throne_BlocksGranite_West</defName>
+    <thing>Throne</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Throne_BlocksLimestone_East</defName>
+    <thing>Throne</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Throne_BlocksLimestone_South</defName>
+    <thing>Throne</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Throne_BlocksLimestone_West</defName>
+    <thing>Throne</thing>
+    <stuff>BlocksLimestone</stuff>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Throne_BlocksMarble_East</defName>
+    <thing>Throne</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Throne_BlocksMarble_South</defName>
     <thing>Throne</thing>
     <stuff>BlocksMarble</stuff>
@@ -5948,10 +7145,24 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
+    <defName>Throne_BlocksSandstone_East</defName>
+    <thing>Throne</thing>
+    <stuff>BlocksSandstone</stuff>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
     <defName>Throne_BlocksSlate_East</defName>
     <thing>Throne</thing>
     <stuff>BlocksSlate</stuff>
     <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Throne_BlocksSlate_North</defName>
+    <thing>Throne</thing>
+    <stuff>BlocksSlate</stuff>
+    <rotation>North</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -5987,6 +7198,13 @@
     <thing>Throne</thing>
     <stuff>Silver</stuff>
     <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Throne_Steel_South</defName>
+    <thing>Throne</thing>
+    <stuff>Steel</stuff>
+    <rotation>South</rotation>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -6082,6 +7300,11 @@
     <defName>Tornado_North</defName>
     <thing>Tornado</thing>
     <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Tortoise</defName>
+    <thing>Tortoise</thing>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
@@ -6245,6 +7468,72 @@
   <KCSG.SymbolDef>
     <defName>Uranium</defName>
     <thing>Uranium</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_BlocksGranite</defName>
+    <thing>Urn</thing>
+    <stuff>BlocksGranite</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_BlocksLimestone</defName>
+    <thing>Urn</thing>
+    <stuff>BlocksLimestone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_BlocksMarble</defName>
+    <thing>Urn</thing>
+    <stuff>BlocksMarble</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_BlocksSandstone</defName>
+    <thing>Urn</thing>
+    <stuff>BlocksSandstone</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_BlocksSlate</defName>
+    <thing>Urn</thing>
+    <stuff>BlocksSlate</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_Gold</defName>
+    <thing>Urn</thing>
+    <stuff>Gold</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_Jade</defName>
+    <thing>Urn</thing>
+    <stuff>Jade</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_Plasteel</defName>
+    <thing>Urn</thing>
+    <stuff>Plasteel</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_Silver</defName>
+    <thing>Urn</thing>
+    <stuff>Silver</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_Steel</defName>
+    <thing>Urn</thing>
+    <stuff>Steel</stuff>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Urn_Uranium</defName>
+    <thing>Urn</thing>
+    <stuff>Uranium</stuff>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
