@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    HSK patch: add Pacas's "Big poison dart" ammo recipe (MakeAmmo_DartBio)
+    to the RH2 RimmuNation² weapon benches (RNBench_CQB / RNBench_LBW /
+    RNBench_HeavyWeapons).
+
+    Why?
+    Pacas Even More Content adds the Acid Scourge SMG and other dart-firing
+    weapons that use AmmoSet_DartsBio. By default, the MakeAmmo_DartBio
+    recipe only loads onto HSK's standard ammo bench (via the
+    AmmoRecipeHighCaliber parent's recipeUsers). Players using RH2's RN
+    benches couldn't craft the darts there.
+
+    This patch adds RN benches to the recipe's recipeUsers list so the
+    recipe appears in their Bills tab too. HSK's standard ammo bench
+    routing is preserved — this is additive.
+
+    Gated by PatchOperationFindMod on both Pacas Even More Content and
+    RH2 RimmuNation² Weapons being active. If either mod isn't loaded,
+    the patch is silently skipped via <success>Always</success>.
+-->
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Pacas Even More Content</li>
+        </mods>
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>[RH2] Rimmu-Nation² - Weapons</li>
+            </mods>
+            <match Class="PatchOperationSequence">
+                <success>Always</success>
+                <operations>
+
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/RecipeDef[defName="MakeAmmo_DartBio"]/recipeUsers</xpath>
+                        <value>
+                            <li>RNBench_CQB</li>
+                            <li>RNBench_LBW</li>
+                            <li>RNBench_HeavyWeapons</li>
+                        </value>
+                    </li>
+
+                </operations>
+            </match>
+        </match>
+    </Operation>
+
+</Patch>
