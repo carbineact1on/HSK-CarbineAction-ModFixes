@@ -16,10 +16,9 @@ Each fix is self-contained and only activates if its target mod is loaded — no
 Stone chunks dropped by drills and extractors are automatically flagged for hauling, so pawns pick them up on their next haul cycle without manual clicking — same behavior as Quarry mod's "Hauling Mode".
 
 - **Per-building toggle gizmo** (Quarry-style) lets you disable it on specific drills if you want
-- **Auto-detects** all drills/extractors at startup — works on any mod's drill, current or future, without manual patches
-- Pre-attached to: vanilla `DeepDrill`, HSK `Extractor`, HSK `RareExtractor`, Alpha Biomes core sample drill (if installed), Project RimFactory + VFE Mechanoids extractors auto-detected
+- **Auto-detects** all drills and extractors at startup — works on every mod's drill (current or future) without manual patches. Vanilla `DeepDrill`, HSK `Extractor` / `RareExtractor` / `OilExtractor`, Alpha Biomes core sample drill, Project RimFactory + VFE Mechanoids extractors are all picked up automatically.
 
-**Mod-friendly:** modders can attach the comp to any drill/extractor in their patch mods via XML:
+**Mod-friendly fallback:** if the heuristic misses a drill (rare), modders can still manually attach the comp via XML:
 ```xml
 <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="YourDrill"]/comps</xpath>
