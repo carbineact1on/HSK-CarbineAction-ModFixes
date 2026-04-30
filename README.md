@@ -18,16 +18,6 @@ Stone chunks dropped by drills and extractors are automatically flagged for haul
 - **Per-building toggle gizmo** (Quarry-style) lets you disable it on specific drills if you want
 - **Auto-detects** all drills and extractors at startup — works on every mod's drill (current or future) without manual patches. Vanilla `DeepDrill`, HSK `Extractor` / `RareExtractor` / `OilExtractor`, Alpha Biomes core sample drill, Project RimFactory + VFE Mechanoids extractors are all picked up automatically.
 
-**Mod-friendly fallback:** if the heuristic misses a drill (rare), modders can still manually attach the comp via XML:
-```xml
-<Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="YourDrill"]/comps</xpath>
-    <value>
-        <li Class="ModFixesPack.AutoHaulChunks.CompProperties_AutoHaulChunks" />
-    </value>
-</Operation>
-```
-
 ### 🌐 Dynamic Diplomacy Fixes
 Patches and tuning for the **Dynamic Diplomacy (Continued)** mod to better fit HSK's faction balance and timings.
 
