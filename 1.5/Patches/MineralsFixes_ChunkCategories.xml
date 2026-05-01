@@ -32,7 +32,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="ZF_SoftStoneChunksBase"]/thingCategories</xpath>
                     <value>
-                        <thingCategories>
+                        <thingCategories Inherit="False">
                             <li>StoneChunks</li>
                             <li>SoftStoneChunks</li>
                         </thingCategories>
@@ -42,7 +42,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="ZF_HardStoneChunksBase"]/thingCategories</xpath>
                     <value>
-                        <thingCategories>
+                        <thingCategories Inherit="False">
                             <li>StoneChunks</li>
                             <li>HardStoneChunks</li>
                         </thingCategories>
@@ -52,7 +52,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="ZF_UltraHardStoneChunksBase"]/thingCategories</xpath>
                     <value>
-                        <thingCategories>
+                        <thingCategories Inherit="False">
                             <li>StoneChunks</li>
                             <li>UltraHardStoneChunks</li>
                         </thingCategories>
@@ -73,7 +73,7 @@
                     <nomatch Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[defName="ZF_BlocksClay"]/thingCategories</xpath>
                         <value>
-                            <thingCategories>
+                            <thingCategories Inherit="False">
                                 <li>StoneBlocks</li>
                             </thingCategories>
                         </value>
