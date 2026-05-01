@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Mod-Fixes: restore vanilla StoneChunks category on Minerals mod chunks.
+
+    Problem: Minerals mod (zacharyfoster.minerals) defines 3 chunk subcategories
+    (SoftStoneChunks, HardStoneChunks, UltraHardStoneChunks) and uses
+    <thingCategories Inherit="False"> on its abstract bases. That REPLACES the
+    inherited vanilla StoneChunks category with the subcategory only.
+
+    Result:
+      - Minerals chunks (Claystone, Mudstone, Basalt, etc.) don't show up in
+        vanilla "Stone Chunks" storage filters
+      - Recipes / jobs that look for StoneChunks don't see them
+      - Mod-Fixes auto-haul works (it walks the parent chain to Chunks),
+        but having StoneChunks directly is more robust
+
+    Fix: add vanilla StoneChunks alongside each Minerals subcategory so
+    the chunks are tagged with both. Still organized by hardness in Minerals'
+    own UI subcategories, but also visible in vanilla filters.
+
+    Guarded by PatchOperationFindMod so it's a no-op when Minerals isn't loaded.
+-->
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Minerals</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="ZF_SoftStoneChunksBase"]/thingCategories</xpath>
+                    <value>
+                        <thingCategories>
+                            <li>StoneChunks</li>
+                            <li>SoftStoneChunks</li>
+                        </thingCategories>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="ZF_HardStoneChunksBase"]/thingCategories</xpath>
+                    <value>
+                        <thingCategories>
+                            <li>StoneChunks</li>
+                            <li>HardStoneChunks</li>
+                        </thingCategories>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="ZF_UltraHardStoneChunksBase"]/thingCategories</xpath>
+                    <value>
+                        <thingCategories>
+                            <li>StoneChunks</li>
+                            <li>UltraHardStoneChunks</li>
+                        </thingCategories>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
