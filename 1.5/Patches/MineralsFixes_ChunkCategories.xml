@@ -59,6 +59,21 @@
                     </value>
                 </li>
 
+                <!-- ZF_BlocksClay explicitly sets <thingCategories IsNull="true"/>
+                     in the Minerals def, which strips the inherited StoneBlocks
+                     category from vanilla StoneBlocksBase. Result: clay blocks
+                     have NO storage category at all and pawns get "no place to
+                     store: clay blocks" errors. Replace the null with a real
+                     StoneBlocks category. -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ZF_BlocksClay"]/thingCategories</xpath>
+                    <value>
+                        <thingCategories>
+                            <li>StoneBlocks</li>
+                        </thingCategories>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
