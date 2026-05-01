@@ -62,10 +62,16 @@ namespace ModFixesPack.AutoHaulChunks
             if (def == null) return false;
             if (def.thingCategories == null) return false;
 
+            // Walk the category parent chain so we catch chunk subcategories
+            // that mods add — e.g. Minerals mod uses SoftStoneChunks /
+            // HardStoneChunks / UltraHardStoneChunks all parented to "Chunks".
+            // Without walking parents, only vanilla "StoneChunks" matches.
             for (int i = 0; i < def.thingCategories.Count; i++)
             {
-                string n = def.thingCategories[i].defName;
-                if (n == "StoneChunks" || n == "Chunks") return true;
+                for (ThingCategoryDef cat = def.thingCategories[i]; cat != null; cat = cat.parent)
+                {
+                    if (cat.defName == "StoneChunks" || cat.defName == "Chunks") return true;
+                }
             }
             return false;
         }
