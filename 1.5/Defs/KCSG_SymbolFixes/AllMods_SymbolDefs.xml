@@ -9679,4 +9679,91 @@
     <thing>Yayo</thing>
   </KCSG.SymbolDef>
 
+  <!-- ===========================================================
+       Auto-detected gaps from KCSG missing-symbol log audit
+       Generated: HSK-VFE-Ancients (10) + HSK-VFE-Deserters (1)
+       Each maps a "<base>_<rotation>" symbol to an existing ThingDef.
+       =========================================================== -->
+
+  <!-- Vault layouts (HSK-VFE-Ancients) — Ideology DLC AncientWarwalker boss parts -->
+  <KCSG.SymbolDef>
+    <defName>AncientWarwalkerClaw_North</defName>
+    <thing>AncientWarwalkerClaw</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AncientWarwalkerLeg_North</defName>
+    <thing>AncientWarwalkerLeg</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AncientWarwalkerTorso_North</defName>
+    <thing>AncientWarwalkerTorso</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <!-- Missing rotation variants for Ideology DLC ancient assets -->
+  <KCSG.SymbolDef>
+    <defName>AncientBed_West</defName>
+    <thing>AncientBed</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AncientEquipmentBlocks_West</defName>
+    <thing>AncientEquipmentBlocks</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AncientOperatingTable_East</defName>
+    <thing>AncientOperatingTable</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AncientOperatingTable_West</defName>
+    <thing>AncientOperatingTable</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>AncientRustedJeep_West</defName>
+    <thing>AncientRustedJeep</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>CollapsedRocks_North</defName>
+    <thing>CollapsedRocks</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <!-- HSK-VFE-Deserters layout candidates (vanilla items) -->
+  <KCSG.SymbolDef>
+    <defName>Battery_East</defName>
+    <thing>Battery</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Battery_North</defName>
+    <thing>Battery</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>ElectricStove_South</defName>
+    <thing>ElectricStove</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Piano_North</defName>
+    <thing>Piano</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
 </Defs>
