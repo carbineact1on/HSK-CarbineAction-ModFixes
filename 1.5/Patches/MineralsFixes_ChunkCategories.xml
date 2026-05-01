@@ -59,19 +59,25 @@
                     </value>
                 </li>
 
-                <!-- ZF_BlocksClay explicitly sets <thingCategories IsNull="true"/>
-                     in the Minerals def, which strips the inherited StoneBlocks
-                     category from vanilla StoneBlocksBase. Result: clay blocks
-                     have NO storage category at all and pawns get "no place to
-                     store: clay blocks" errors. Replace the null with a real
-                     StoneBlocks category. -->
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ZF_BlocksClay"]/thingCategories</xpath>
-                    <value>
-                        <thingCategories>
-                            <li>StoneBlocks</li>
-                        </thingCategories>
-                    </value>
+                <!-- ZF_BlocksClay's def has <thingCategories IsNull="true"/>
+                     which the user reported leaves clay blocks without a
+                     storage category ("no place to store: clay blocks").
+
+                     Conditional: only replace thingCategories if StoneBlocks
+                     isn't already present. Some mods (or HSK's own load order)
+                     may have already restored the category — adding it again
+                     would log "duplicate thingCategory StoneBlocks" config
+                     errors at boot. -->
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName="ZF_BlocksClay"]/thingCategories/li[text()="StoneBlocks"]</xpath>
+                    <nomatch Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ZF_BlocksClay"]/thingCategories</xpath>
+                        <value>
+                            <thingCategories>
+                                <li>StoneBlocks</li>
+                            </thingCategories>
+                        </value>
+                    </nomatch>
                 </li>
 
             </operations>
