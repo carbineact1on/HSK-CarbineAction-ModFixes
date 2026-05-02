@@ -109,15 +109,6 @@ NEW MOD FIX: KCSG SymbolDef catch-all
 - Categories covered: stuff-variant furniture (Bed_Steel_East, Fence_BlocksMarble, Throne_BlocksGranite_South), rotational items (Dresser_Steel_East, ShelfSmall_BlocksLimestone_North), Imperial decor, drapes, steles, urns, sarcophagi, plants, filth, VFEPD_* props, and ~473 bare ThingDef wrappers. 1140 stuff+rotation variants + 473 bare = 1613 total.
 - Harmless when a target mod is disabled — unused SymbolDefs never get queried, no errors. Zero measurable boot-time cost (~30-80ms XML parse).
 
---- Faction Territories and Vassalage (1.5 backport) ---
-
-NEW MOD FIX: Faction Territories and Vassalage 1.5 backport
-- The original mod by jaeger972 is 1.6-only because it Harmony-patches a 7-parameter overload of FactionManager.TryGetRandomNonColonyHumanlikeFaction that only exists in 1.6 (Odyssey). On 1.5 the patch's TargetMethod() returns null, Harmony.PatchAll() throws, and the entire mod's Mod constructor fails — game freezes during mod load.
-- Fix shipped as a companion mod: HSK-FactionTerritories-1.5Patch (separate folder, separate packageId carbineaction.factionterritories.hsk15patch, marked incompatibleWith jaeger972.factionterritories so it can't double-load). GitHub: https://github.com/carbineact1on/HSK-FactionTerritories-1.5Patch
-- The patched DLL has the broken Patch_FactionManager_TryGetRandomNonColonyHumanlikeFaction_ForceAmbushFaction class surgically removed via Mono.Cecil (only 1 of ~25 patches sacrificed). All other patches — territory map mode, vassalage UI, settlement gizmos, ambush worker, RandomEnemyFaction force, RandomRaidableEnemyFaction force, etc. — apply normally on 1.5.
-- Trade-off: the "force-ambush-faction" override on the specific 7-param method is gone. The other two faction-force paths (RandomEnemyFaction, RandomRaidableEnemyFaction) still work, so faction-targeted events generally still respect territory selection.
-- Switch back to the upstream Workshop version once you upgrade to 1.6.
-
 COMPATIBILITY:
 - All fixes are conditional — inactive if the target mod isn't loaded
 - Zero overhead if a mod is missing
