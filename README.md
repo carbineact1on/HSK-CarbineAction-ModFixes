@@ -53,6 +53,33 @@ Re-tunes Real Ruins encounters for HSK difficulty: more hostiles, harder loot ta
 ### 🌍 Geological Landforms Fixes
 Compat patches for Geological Landforms — terrain topology checks used by Dynamic Diplomacy validation.
 
+### 💥 Muzzle Flash — HSK / RH2 / Wolfein / AUR / Parabellum / Deadlife coverage
+**Muzzle Flash** by IssacZhuang ships built-in patches for ~31 weapon mods (Core, CE, Rimsenal, VFE family, VEW family, Reinforced Mechanoids, Fortifications, etc.) but has **no patch for the HSK weapon ecosystem**. So every HSK / RN / Wolfein / AUR / Parabellum / Deadlife weapon fires without a flash.
+
+This fix auto-generates `MuzzleFlashProps` mod-extensions for **450 weapons** across 6 mods, covering:
+
+| Source | Count | Tier source |
+|---|---|---|
+| HSK Core_SK | 104 | filename heuristic + 94 from aspen801's hand-tuned patch |
+| RH2 Rimmu-Nation² Weapons | 130 | filename heuristic |
+| Parabellum | 150 | filename heuristic (handhelds + 14 turret types) |
+| HSK-AncientUrbanRuins | 35 | hand-curated tier dict |
+| HSK-Wolfein-Race | 26 | defName-prefix matching |
+| HSK-VQE-Deadlife | 5 | hand-curated tier dict |
+
+Each weapon gets a tier-appropriate flash:
+- Pistols / SMGs → small standard flash
+- Rifles / Carbines / Snipers → medium standard flash
+- Shotguns / LMGs / Launchers / Heavy turrets → large standard flash
+- Charged / Plasma / Laser / Charged turrets → charged flash variant
+- Mechanoid / small turrets → medium standard flash
+
+Hand-tuned offsets pulled from [aspen801/HSK-MuzzleFlash-compatibility-patch](https://github.com/aspen801/HSK-MuzzleFlash-compatibility-patch) layer over the auto-generation for HSK Core_SK weapons (94 of 104 entries) — better visual barrel alignment per weapon. Remaining weapons use sane tier defaults that work for most sprites.
+
+Wrapped in `PatchOperationFindMod` for `IssacZhuang.MuzzleFlash` — entire 5000-line patch file is skipped at parse time if Muzzle Flash isn't installed. Zero error spam, zero overhead.
+
+Credit: aspen801 for the HSK hand-tuned offsets foundation.
+
 ## Installation
 
 1. Subscribe / clone into `RimWorld/Mods/Mod-Fixes-Pack`
