@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Ancient Mining Industry (XMB.AncientMiningIndustry.MO) — HSK pattern
+    completion patches for player-craftable buildings.
+
+    Pacas Patches Compilation already covers the ANCIENT (loot/spawn)
+    variants of these buildings:
+      BreadMoAM_AncientAutomaticDrillingRig
+      BreadMoAM_AncientGiantRockExcavator
+      BreadMoAM_AncientExcavatorPowerFacilities
+      BreadMoAM_AncientExcavatorBucketWheel
+      BreadMoAM_AncientOreDressingMachine
+      BreadMoAM_AncientElectricalEquipment
+      BreadMoAM_AncientMineralConveyor
+      BreadMoAM_Turret_LargeShotgun
+      BreadMoAM_Rail / BreadMoAM_Crosstie
+
+    But the PLAYER-CRAFTABLE variants (without "Ancient" prefix) were left
+    using raw vanilla Steel. This patch brings them in line with Pacas's
+    HSK pattern: SteelBar + Plasteel + ReinforcedConcrete + the HSK
+    component pipeline (ComponentIndustrial / ComponentSpacer /
+    ElectronicComponents / Mechanism). Plus the turret barrel-fuel filter
+    is swapped from raw Steel to SteelBar.
+
+    Conditional on AMI being loaded — no-op otherwise.
+-->
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ancient mining industry</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!-- ============================================================ -->
+                <!--  PLAYER DRILLING / TUNNELING / PROCESSING                   -->
+                <!--  (mirrors Pacas's Ancient* costList pattern)                -->
+                <!-- ============================================================ -->
+
+                <!-- BreadMoAM_AutomaticDrillingRig (player drilling rig) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_AutomaticDrillingRig"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <Plasteel>100</Plasteel>
+                            <ReinforcedConcrete>20</ReinforcedConcrete>
+                            <SteelBar>100</SteelBar>
+                            <ComponentIndustrial>5</ComponentIndustrial>
+                            <ElectronicComponents>4</ElectronicComponents>
+                            <Mechanism>3</Mechanism>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- BreadMoAM_TunnelBoringMachine (biggest player machine) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_TunnelBoringMachine"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <Plasteel>500</Plasteel>
+                            <ReinforcedConcrete>80</ReinforcedConcrete>
+                            <SteelBar>200</SteelBar>
+                            <ComponentIndustrial>12</ComponentIndustrial>
+                            <ComponentSpacer>6</ComponentSpacer>
+                            <ElectronicComponents>8</ElectronicComponents>
+                            <Mechanism>8</Mechanism>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- BreadMoAM_OreDressingMachine (player ore processor) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_OreDressingMachine"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <Plasteel>100</Plasteel>
+                            <TitaniumBar>20</TitaniumBar>
+                            <SteelBar>80</SteelBar>
+                            <ComponentIndustrial>6</ComponentIndustrial>
+                            <Mechanism>4</Mechanism>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- ============================================================ -->
+                <!--  PLAYER UTILITY / SUPPORT BUILDINGS                          -->
+                <!-- ============================================================ -->
+
+                <!-- BreadMoAM_ElectricalEquipment (small power equip) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_ElectricalEquipment"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <Plasteel>15</Plasteel>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                            <ElectronicComponents>1</ElectronicComponents>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- BreadMoAM_MineralConveyor (mineral conveyor segment) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_MineralConveyor"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <SteelBar>5</SteelBar>
+                            <Plasteel>5</Plasteel>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- BreadMoAM_MineralExports (export pad / loading) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_MineralExports"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <SteelBar>30</SteelBar>
+                            <ComponentIndustrial>1</ComponentIndustrial>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- BreadMoAM_TunnelStructuralSupport_a (tunnel beam variant a) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_TunnelStructuralSupport_a"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <SteelBar>80</SteelBar>
+                            <ReinforcedConcrete>20</ReinforcedConcrete>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- BreadMoAM_TunnelStructuralSupport_b (tunnel beam variant b) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_TunnelStructuralSupport_b"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <SteelBar>80</SteelBar>
+                            <ReinforcedConcrete>20</ReinforcedConcrete>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- ============================================================ -->
+                <!--  PLAYER TURRETS                                              -->
+                <!--  (mirrors Pacas's BreadMoAM_Turret_LargeShotgun pattern)    -->
+                <!-- ============================================================ -->
+
+                <!-- BreadMoAM_Turret_ShotgunTurret (mini player turret) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_Turret_ShotgunTurret"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <SteelBar>60</SteelBar>
+                            <ComponentIndustrial>3</ComponentIndustrial>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- BreadMoAM_Turret_ShotgunTurretN (mini player turret, north variant) -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_Turret_ShotgunTurretN"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <SteelBar>60</SteelBar>
+                            <ComponentIndustrial>3</ComponentIndustrial>
+                        </costList>
+                    </value>
+                </li>
+
+                <!-- ============================================================ -->
+                <!--  TURRET BARREL FUEL FILTER: Steel -> SteelBar                -->
+                <!--  HSK refines Steel into SteelBar at the smelter; raw Steel  -->
+                <!--  isn't a normal player-haulable resource in HSK economy.    -->
+                <!-- ============================================================ -->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_Turret_ShotgunTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                    <value>
+                        <li>SteelBar</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_Turret_ShotgunTurretN"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                    <value>
+                        <li>SteelBar</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BreadMoAM_Turret_LargeShotgun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                    <value>
+                        <li>SteelBar</li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
