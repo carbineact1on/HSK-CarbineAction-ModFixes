@@ -3141,6 +3141,427 @@
 						</li>
 					</value>
 				</li>
+				<!-- HSK-AncientUrbanRuins (35 weapons) -->
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_ADAR"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_AK101A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_AK68A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_APS"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(0.5,0.5)</drawSize>
+							<offsets>
+								<li>(0.18,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_ASVAL"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_AVT"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_CPHG"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(0.5,0.5)</drawSize>
+							<offsets>
+								<li>(0.18,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_DTMDR"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_FNHG"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(0.5,0.5)</drawSize>
+							<offsets>
+								<li>(0.18,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_Hunter"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.9,0.9)</drawSize>
+							<offsets>
+								<li>(0.55,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_M42U"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_M4A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_M4ASOP"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_M4C"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_M5A3LT"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_M700A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.9,0.9)</drawSize>
+							<offsets>
+								<li>(0.55,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_MCX"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_MCXC"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_MK17A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_MK18M"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.9,0.9)</drawSize>
+							<offsets>
+								<li>(0.55,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_MK68A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_MPX"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(0.6,0.6)</drawSize>
+							<offsets>
+								<li>(0.28,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_MPXL"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(0.6,0.6)</drawSize>
+							<offsets>
+								<li>(0.28,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_Makarov"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(0.5,0.5)</drawSize>
+							<offsets>
+								<li>(0.18,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_PKM"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1.1,1.1)</drawSize>
+							<offsets>
+								<li>(0.55,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_PKP"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1.1,1.1)</drawSize>
+							<offsets>
+								<li>(0.55,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_R11A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_RM68A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_SR25A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.9,0.9)</drawSize>
+							<offsets>
+								<li>(0.55,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_STM"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(0.6,0.6)</drawSize>
+							<offsets>
+								<li>(0.28,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_STMC"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(0.6,0.6)</drawSize>
+							<offsets>
+								<li>(0.28,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_Spear68A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_Spear68C"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_TKB68A"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.8)</drawSize>
+							<offsets>
+								<li>(0.45,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="AM_VSS"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.9,0.9)</drawSize>
+							<offsets>
+								<li>(0.55,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

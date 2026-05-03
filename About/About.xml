@@ -124,10 +124,11 @@ NEW MOD FIX: Muzzle Flash for HSK weapon arsenal
   * Charged / Plasma / Laser: MF_ChargedMuzzleFalsh (0.7-1.0)
   * Mechanoid weapons: MF_StandardMuzzleFalsh (1.0)
   * Turrets: MF_StandardMuzzleFalsh / Three sized for tier
-- Coverage (260 total):
+- Coverage (295 total):
   * HSK Core_SK weapons: 104 (pistols, SMGs, shotguns, rifles, snipers, heavy, launchers, blasters, plasma, laser, railgun, mechanoid weapons, all turret guns)
   * RH2 Rimmu-Nation² Weapons: 130 (handguns, SMGs, sharpshooters, MGs, launchers, rifles, shotguns, spacer chargeweapons)
   * HSK-Wolfein-Race: 26 (pistols, SMGs, ARs, RFs, MGs, launchers, drone weapons)
+  * HSK-AncientUrbanRuins: 35 (pistols, SMGs, rifles, snipers, LMGs, top-tier bullpup)
 - 94 HSK weapons use hand-tuned offsets pulled from aspen801's HSK-MuzzleFlash-compatibility-patch (https://github.com/aspen801/HSK-MuzzleFlash-compatibility-patch) — better visual alignment per-weapon. Remaining weapons use tier-based defaults (works correctly, may need minor offset hand-tune for individual sprites).
 - Wrapped in PatchOperationFindMod for IssacZhuang.MuzzleFlash so the entire patch is a no-op when Muzzle Flash isn't loaded — zero error spam, zero overhead.
 
