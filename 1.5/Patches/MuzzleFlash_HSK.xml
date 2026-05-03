@@ -18,7 +18,19 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<!-- HSK Core_SK (87 weapons) -->
+				<!-- HSK Core_SK (104 weapons) -->
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="Artillery_TOWMissile"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
 				<li Class="SafePatcher.PatchOperationSetModExtension">
 					<xpath>Defs/ThingDef[defName="Gun_AGLGrenadeLauncher"]</xpath>
 					<value>
@@ -35,10 +47,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_AGSThirty"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -47,10 +59,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_AK47Gun"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -59,10 +71,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_ATML"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -71,10 +83,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_ATR"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -83,10 +95,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_AUG"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -95,10 +107,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -107,10 +119,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_AssaultShotgun"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.40,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -119,10 +131,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_AutocannonTurret"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -131,10 +143,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_Autopistol"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshTwo</def>
-							<drawSize>(0.5,0.5)</drawSize>
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.18,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -144,9 +156,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -156,9 +168,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -168,9 +180,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -179,10 +191,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_BlasterTurret"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -191,10 +203,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -204,9 +216,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -215,10 +227,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.40,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -228,9 +240,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<drawSize>(1.3,1.3)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -239,10 +251,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_ChargeLance"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(0.6,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -252,9 +264,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -275,10 +287,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_FAMAS"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -288,9 +300,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -300,9 +312,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.1,1.1)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -312,9 +324,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -324,9 +336,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.1,1.1)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -335,10 +347,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshTwo</def>
-							<drawSize>(0.6,0.6)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.28,0.03)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -348,9 +360,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -360,9 +372,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -371,10 +383,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.60,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -383,10 +395,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_InfernoCannon"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -396,9 +408,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -420,9 +432,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.1,1.1)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -432,9 +444,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -444,9 +456,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -455,10 +467,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_M37A2_USCM"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.40,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -467,10 +479,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_M42A_USCM"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -479,10 +491,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_M4A1Gun"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -492,9 +504,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.1,1.1)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -503,10 +515,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_M5_USCM"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.60,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -516,9 +528,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.1,1.1)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -527,10 +539,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_M79GL"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.60,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -539,10 +551,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_M82Gun"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -552,9 +564,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshTwo</def>
-							<drawSize>(0.6,0.6)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.28,0.03)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -563,10 +575,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_MachinePistol"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshTwo</def>
-							<drawSize>(0.6,0.6)</drawSize>
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.28,0.03)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -587,10 +599,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_MarineSturmRifle"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -599,10 +611,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_MechPlasma"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -611,10 +623,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_MilkorMGL"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.60,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -624,9 +636,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -636,9 +648,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.1,1.1)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -647,10 +659,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_MissileSystem"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -659,10 +671,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_NavalGun"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -671,10 +683,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_Needle"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(0.6,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -684,9 +696,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -696,9 +708,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.5,0.04)</li>
 							</offsets>
 						</li>
 					</value>
@@ -708,9 +720,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -720,9 +732,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -732,9 +744,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -744,9 +756,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -756,9 +768,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -768,9 +780,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -779,10 +791,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_RL"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -791,10 +803,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_RPG"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.60,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -803,10 +815,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_RailgunMKI"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -815,10 +827,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshTwo</def>
-							<drawSize>(0.5,0.5)</drawSize>
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.18,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -839,10 +851,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_SCAR_H"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -851,10 +863,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_SG553Gun"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -863,10 +875,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_SawGun"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -875,10 +887,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_SentryRocketLauncher"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -887,10 +899,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -900,9 +912,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_ChargedMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -911,10 +923,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_TAMSR"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.55,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -935,10 +947,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_TacticalCombatRifle"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(0.8,0.8)</drawSize>
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.45,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -947,10 +959,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_TacticalShotgun"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(0.9,0.9)</drawSize>
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.40,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -972,9 +984,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -996,9 +1008,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshTwo</def>
-							<drawSize>(0.6,0.6)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.28,0.03)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -1008,9 +1020,9 @@
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalshThree</def>
-							<drawSize>(1.4,1.4)</drawSize>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.65,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -1019,10 +1031,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_ZeonBlaster"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -1031,10 +1043,10 @@
 					<xpath>Defs/ThingDef[defName="Gun_lightmechblaster"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
-							<def>MF_StandardMuzzleFalsh</def>
-							<drawSize>(1.0,1.0)</drawSize>
+							<def>MF_ChargedMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
 							<offsets>
-								<li>(0.50,0.05)</li>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
@@ -1059,6 +1071,198 @@
 							<drawSize>(1.0,1.0)</drawSize>
 							<offsets>
 								<li>(0.50,0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_93R"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_ARFifty"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_AT2K"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_CXfour"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_Deringer"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_Galil"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_GreaseGun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_HecateII"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_Skorpion"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_TMP"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_Tecnine"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_USC"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_Vector"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshTwo</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_VektorCP"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_WA2K"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<li Class="SafePatcher.PatchOperationSetModExtension">
+					<xpath>Defs/ThingDef[defName="RF_Gun_XMeight"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalshThree</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.42,0.08)</li>
 							</offsets>
 						</li>
 					</value>
