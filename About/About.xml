@@ -23,8 +23,6 @@
         <li>Woolstrand.RealRuins</li>
         <li>multilangcolorfultraits.pirateby</li>
         <li>skyarkhangel.hsk</li>
-        <li>XMB.AncientMiningIndustry.MO</li>
-        <li>pacas.patchescompilation.v1</li>
     </loadAfter>
     <description>A consolidated patch pack for large RimWorld mods. Each fix only activates if its target mod is loaded — safe to install even if you don't have all the patched mods. More fixes will be added over time.
 
@@ -110,16 +108,6 @@ NEW MOD FIX: KCSG SymbolDef catch-all
   TOTAL: ~1200 missing symbols → 7 (99.4% reduction).
 - Categories covered: stuff-variant furniture (Bed_Steel_East, Fence_BlocksMarble, Throne_BlocksGranite_South), rotational items (Dresser_Steel_East, ShelfSmall_BlocksLimestone_North), Imperial decor, drapes, steles, urns, sarcophagi, plants, filth, VFEPD_* props, and ~473 bare ThingDef wrappers. 1140 stuff+rotation variants + 473 bare = 1613 total.
 - Harmless when a target mod is disabled — unused SymbolDefs never get queried, no errors. Zero measurable boot-time cost (~30-80ms XML parse).
-
---- Ancient Mining Industry (player-craftable HSK pattern completion) ---
-
-NEW MOD FIX: Ancient Mining Industry HSK pattern completion
-- Pacas Patches Compilation already covers the ANCIENT (loot/spawn) variants of AMI buildings (Drilling Rig, Giant Rock Excavator, Excavator Power Facilities, Bucket Wheel, Ore Dressing Machine, Electrical Equipment, Mineral Conveyor, Large Shotgun Turret, Rail, Crosstie) using HSK's Plasteel + ReinforcedConcrete + ComponentIndustrial / ElectronicComponents / Mechanism pattern.
-- The PLAYER-CRAFTABLE variants (without "Ancient" prefix) were left using raw vanilla Steel — out of step with HSK's smelter-based economy.
-- This fix patches the 10 missing player-craftable buildings to mirror Pacas's HSK pattern: SteelBar (refined alloy) + Plasteel + ReinforcedConcrete + the HSK component pipeline. Plus the turret barrel-fuel filter is swapped from raw Steel to SteelBar so reload jobs use a normal HSK haulable resource.
-- Patched defs: AutomaticDrillingRig, TunnelBoringMachine, OreDressingMachine, ElectricalEquipment, MineralConveyor, MineralExports, TunnelStructuralSupport_a/b, Turret_ShotgunTurret/N
-- Wrapped in PatchOperationFindMod — no-op if AMI isn't loaded.
-- Loads after Pacas Patches Compilation so Pacas's Ancient* patches stay untouched.
 
 COMPATIBILITY:
 - All fixes are conditional — inactive if the target mod isn't loaded
