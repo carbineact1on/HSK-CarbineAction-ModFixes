@@ -56,16 +56,21 @@ Compat patches for Geological Landforms — terrain topology checks used by Dyna
 ### 💥 Muzzle Flash — HSK / RH2 / Wolfein / AUR / Parabellum / Deadlife coverage
 **Muzzle Flash** by IssacZhuang ships built-in patches for ~31 weapon mods (Core, CE, Rimsenal, VFE family, VEW family, Reinforced Mechanoids, Fortifications, etc.) but has **no patch for the HSK weapon ecosystem**. So every HSK / RN / Wolfein / AUR / Parabellum / Deadlife weapon fires without a flash.
 
-This fix auto-generates `MuzzleFlashProps` mod-extensions for **450 weapons** across 6 mods, covering:
+This fix auto-generates `MuzzleFlashProps` mod-extensions for **447 weapons** across 6 mods, covering:
 
 | Source | Count | Tier source |
 |---|---|---|
-| HSK Core_SK | 104 | filename heuristic + 94 from aspen801's hand-tuned patch |
+| HSK Core_SK | 101 | filename heuristic + 73 from aspen801's hand-tuned patch |
 | RH2 Rimmu-Nation² Weapons | 130 | filename heuristic |
 | Parabellum | 150 | filename heuristic (handhelds + 14 turret types) |
 | HSK-AncientUrbanRuins | 35 | hand-curated tier dict |
 | HSK-Wolfein-Race | 26 | defName-prefix matching |
 | HSK-VQE-Deadlife | 5 | hand-curated tier dict |
+
+Filtering pass eliminates:
+- Commented-out HSK defs (no `Gun_AutocannonTurret xpath not found`-type errors)
+- Parabellum crate items (`_Crate`/`_Blueprint`/`_Frame`/`Build*` filter)
+- ~345 weapons already covered by Muzzle Flash's built-in patches (kills SafePatcher "Duplicated extension found" warnings)
 
 Each weapon gets a tier-appropriate flash:
 - Pistols / SMGs → small standard flash
